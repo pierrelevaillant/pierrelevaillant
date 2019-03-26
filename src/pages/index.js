@@ -10,7 +10,7 @@ const IndexPage = () => (
       <h1>Pierre Le Vaillant</h1>
     </div>
     <div style={{ overflow: `hidden`, }}>
-      <h2>Designer, <a href="https://www.area17.com" target="_blank" rel="noopener noreferrer">AREA 17</a></h2>e>
+      <h2>Designer, <a href="https://www.area17.com" target="_blank" rel="noopener noreferrer">AREA 17</a></h2>
     </div>
   </Layout>
 )

@@ -1,10 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Pierre Le Vaillant`,
+    description: `Paris-based product designer with an emphasis on technology. Interested in systems thinking applied to human needs.`,
+    author: `@levaillantp`,
   },
   plugins: [
+      {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-58743682-1",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
