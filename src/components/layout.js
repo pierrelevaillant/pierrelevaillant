@@ -8,16 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import ReallySmoothScroll from 'really-smooth-scroll'
 
 import "./layout.css"
-
-ReallySmoothScroll.shim();
-
-ReallySmoothScroll.config({
-  mousewheelSensitivity: 10, // Default
-  keydownSensitivity: 6 // Default (When you press arrow down/up key)
-});
 
 const Layout = ({ children }) => (
   <StaticQuery
