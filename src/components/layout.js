@@ -8,8 +8,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import ReallySmoothScroll from 'really-smooth-scroll'
 
 import "./layout.css"
+
+ReallySmoothScroll.shim();
+
+ReallySmoothScroll.config({
+  mousewheelSensitivity: 10, // Default
+  keydownSensitivity: 6 // Default (When you press arrow down/up key)
+});
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -25,14 +33,10 @@ const Layout = ({ children }) => (
     render={data => (
       <>
       <div style={{
-          padding: `2vw`,
-          height: `100vh`,
+          padding: `2vw`
         }}
         >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}
-        </footer>
         </div>
       </>
     )}
