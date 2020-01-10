@@ -1,45 +1,33 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "pierrelevaillant",
+  "version": "1.0.0",
+  "description": "French Designer and Creative Developer based in Paris, currently working at AREA 17.",
+  "author": "Pierre Le Vaillant",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
   "dependencies": {
-    "gatsby": "^2.2.11",
-    "gatsby-image": "^2.0.38",
-    "gatsby-plugin-google-analytics": "^2.0.17",
-    "gatsby-plugin-manifest": "^2.0.24",
-    "gatsby-plugin-offline": "^2.0.25",
-    "gatsby-plugin-react-helmet": "^3.0.11",
-    "gatsby-plugin-sharp": "^2.0.31",
-    "gatsby-source-filesystem": "^2.0.28",
-    "gatsby-transformer-sharp": "^2.1.18",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
-    "react-helmet": "^5.2.0",
-    "react-reveal": "^1.2.2"
+    "@bazzite/nuxt-optimized-images": "^0.3.0",
+    "@nuxt/http": "^0.3.8",
+    "flashgrid": "^1.1.1",
+    "locomotive-scroll": "^3.2.7",
+    "nuxt": "^2.0.0",
+    "nuxt-lazyimage": "0.0.14",
+    "postcss-nested": "^4.2.1",
+    "vue-awesome-swiper": "^3.1.3",
+    "vue-scrollto": "^2.17.1"
   },
   "devDependencies": {
-    "prettier": "^1.16.4"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "@nuxtjs/style-resources": "^1.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "lqip-loader": "^2.2.0",
+    "node-sass": "^4.13.0",
+    "responsive-loader": "^1.2.0",
+    "sass-loader": "^8.0.0",
+    "webp-loader": "^0.6.0"
   }
 }
