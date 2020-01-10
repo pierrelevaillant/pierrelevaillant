@@ -21,6 +21,7 @@
     "vue-scrollto": "^2.17.1"
   },
   "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.2.2",
     "@nuxtjs/style-resources": "^1.0.0",
     "imagemin-mozjpeg": "^8.0.0",
     "lqip-loader": "^2.2.0",
