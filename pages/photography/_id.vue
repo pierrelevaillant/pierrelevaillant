@@ -66,6 +66,7 @@ export default {
           nextEl: '.a-button-next',
           prevEl: '.a-button-prev',
         },
+        noSwiping: true,
         fadeEffect: { crossFade: true },
         speed: 0,
         loop: true,

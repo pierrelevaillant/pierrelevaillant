@@ -17,8 +17,7 @@
     "nuxt": "^2.0.0",
     "nuxt-lazyimage": "0.0.14",
     "postcss-nested": "^4.2.1",
-    "vue-awesome-swiper": "^3.1.3",
-    "vue-scrollto": "^2.17.1"
+    "vue-awesome-swiper": "^3.1.3"
   },
   "devDependencies": {
     "@nuxtjs/google-analytics": "^2.2.2",

@@ -63,7 +63,6 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
-    [ 'vue-scrollto/nuxt', { duration: 600, easing: 'ease-in-out' } ],
   ],
   /*
   ** Build configuration
