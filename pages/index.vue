@@ -136,7 +136,7 @@ export default {
   mixins: [locomotive],
   head () {
     return {
-      title: 'About — Pierre Le Vaillant',
+      title: 'Pierre Le Vaillant — Designer and Creative Developer',
     }
   },
 }

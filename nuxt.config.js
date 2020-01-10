@@ -17,7 +17,8 @@ export default {
     script: [
       {
         src:
-          "https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"
+          "https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver",
+        defer: true
       }
     ]
   },
