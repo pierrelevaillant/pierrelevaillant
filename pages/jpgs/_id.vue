@@ -3,19 +3,19 @@
     <div v-swiper:mySwiper="swiperOption">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img :src="require('~/assets/images/02/_thumb.jpg')" alt="Lorem ipsum" />
+        <ImageResponsive :data-src="require('~/assets/images/02/_thumb.jpg')" alt="Sed ut perspiciatis unde omnis" :aspectRatio="'4/3'" />
       </div>
       <div class="swiper-slide">
-        <img :src="require('~/assets/images/02/01.jpg')" alt="Lorem ipsum" />
+        <ImageResponsive :data-src="require('~/assets/images/02/01.jpg')" alt="Sed ut perspiciatis unde omnis" :aspectRatio="'4/3'" />
       </div>
       <div class="swiper-slide">
-        <img :src="require('~/assets/images/02/02.jpg')" alt="Lorem ipsum" />
+        <ImageResponsive :data-src="require('~/assets/images/02/02.jpg')" alt="Sed ut perspiciatis unde omnis" :aspectRatio="'4/3'" />
       </div>
       <div class="swiper-slide">
-        <img :src="require('~/assets/images/02/03.jpg')" alt="Lorem ipsum" />
+        <ImageResponsive :data-src="require('~/assets/images/02/03.jpg')" alt="Sed ut perspiciatis unde omnis" :aspectRatio="'4/3'" />
       </div>
       <div class="swiper-slide">
-        <img :src="require('~/assets/images/02/04.jpg')" alt="Lorem ipsum" />
+        <ImageResponsive :data-src="require('~/assets/images/02/04.jpg')" alt="Sed ut perspiciatis unde omnis" :aspectRatio="'4/3'" />
       </div>
 
     </div>
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-
+import ImageResponsive from '~/components/Image/ImageResponsive'
 import SpacingLarge from '~/components/Spacing/SpacingLarge'
 import SpacingMedium from '~/components/Spacing/SpacingMedium'
 import SpacingSmall from '~/components/Spacing/SpacingSmall'
@@ -42,7 +42,8 @@ export default {
     SpacingSmall,
     SpacingTiny,
     SingleNumber,
-    Quote
+    Quote,
+    ImageResponsive
   },
   head () {
     return {
@@ -100,20 +101,18 @@ export default {
 }
 
 .swiper-slide {
+  position: relative;
 
-  img {
-    width: auto;
+  & > div {
+    width: 70vh;
     left: 50%;
     top: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
 
     @media (orientation: portrait) {
-      max-width: 50vw;
-    }
-
-    @media (orientation: landscape) {
-      max-height: 50vh;
+      width: 50vh;
+      max-width: 70vw;
     }
   }
 }

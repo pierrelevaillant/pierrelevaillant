@@ -19,15 +19,3 @@ body {
   box-sizing: border-box;
   position: relative;
 }
-
-@each $name, $point in $breakpoints {
-  @include breakpoint('#{$name}') {
-    head {
-      font-family: '#{$name}';
-    }
-
-    body::after {
-      content: '#{$name}';
-    }
-  }
-}

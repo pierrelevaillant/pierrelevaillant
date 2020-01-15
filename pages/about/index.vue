@@ -103,7 +103,7 @@
 
       <footer class="o-footer grid grid-gap-xs" data-scroll>
           <div class="col-6 overflow">
-            <p><a href="#" v-scroll-to="'#js-scroll'">Back to top</a></p>
+            <p><a href="#">Back to top</a></p>
           </div>
           <div class="col-6 overflow">
             <p>© {{ new Date().getFullYear() }}</p>

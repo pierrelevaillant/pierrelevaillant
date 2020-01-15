@@ -23,20 +23,19 @@ img {
   border: 0 none;
   width: 100%;
   height: auto;
-  transition: opacity .75s var(--easing-fade);
+  transition: opacity 1s var(--easing-fade);
   display: block;
 
   & + img {
     margin-top: var(--spacing-tiny);
   }
 
-  &[lazy=loading] {
+  &.lazyload,
+  &.lazyloading {
     opacity: 0;
   }
-  &[lazy=error] {
-    opacity: 0;
-  }
-  &[lazy=loaded] {
+
+  &.lazyloaded {
     opacity: 1;
   }
 }

@@ -10,7 +10,10 @@ $base-height: 5;
   --spacing-tiny: 10px;
   --spacing-small: 1vw;
   --spacing-medium: 6vw;
-  --spacing-large: 20vw;
+  --spacing-large: 16vw;
+
+  --grid-gutter: 10px;
+  --grid-width: calc(100% - var(--grid-gutter) * 2);
 
   --easing-fade: cubic-bezier(.165,.84,.44,1);
   --easing-translate: cubic-bezier(.165,.84,.44,1);

@@ -71,10 +71,11 @@
         <div class="col-6">
           <ul>
             <li>Netflix</li>
+            <li>The Weather Channel</li>
             <li>Mitsubishi</li>
+            <li>Nokia</li>
             <li>Pentagram</li>
             <li>Le Parisien</li>
-            <li>Nokia</li>
             <li>Salon des Entrepreneurs</li>
             <li>Van Cleef & Arpels</li>
             <li>Do The Green Thing</li>
@@ -98,7 +99,7 @@
 
       <svg class="svg" viewBox="0 0 708 1063" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M77.7706 1.52393C43.5204 56.5044 14.7762 121.711 4.9288 185.978C1.49475 208.39 -3.59292 233.164 14.8312 249.421C41.4002 272.864 78.5601 279.803 112.681 283.66C175.066 290.712 238.048 294.557 300.66 299.101C386.117 305.304 477.649 325.128 544.193 383.524C560.388 397.736 577.702 412.096 583.467 433.875C589.453 456.489 586.192 486.324 584.977 509.402C582.867 549.509 561.919 589.577 524.891 608.091C505.362 617.856 480.277 620.207 459.099 624.539C442.44 627.947 427.405 633.893 410.09 632.931C401.171 632.436 399.734 604.697 398.677 598.356C396.33 584.271 388.35 562.525 405.894 556.061C427.363 548.151 457.249 544.849 479.407 550.019C493.517 553.311 498.875 567.683 502.065 580.733C507.501 602.971 513.282 625.837 517.339 648.372C521.683 672.505 530.177 713.92 517.003 736.151C498.059 768.119 454.332 791.678 422.51 808.993C416.347 812.346 338.945 839.597 337.584 822.588C334.959 789.778 391.577 800.973 411.768 803.455C508.38 815.329 569.004 895.98 627.608 963.908C651.234 991.292 675.384 1018.51 695.751 1048.5C698.939 1053.19 701.328 1059.51 706.157 1061.93" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+      </svg>
 
 <!--
       <footer class="o-footer grid grid-gap-xs" data-scroll>
@@ -123,6 +124,7 @@ import SpacingSmall from '~/components/Spacing/SpacingSmall'
 import SpacingTiny from '~/components/Spacing/SpacingTiny'
 import SingleNumber from '~/components/Numbers/SingleNumber'
 import Quote from '~/components/Blockquote/Quote'
+import ImageResponsive from '~/components/Image/ImageResponsive'
 
 export default {
   components: {
@@ -131,7 +133,8 @@ export default {
     SpacingSmall,
     SpacingTiny,
     SingleNumber,
-    Quote
+    Quote,
+    ImageResponsive
   },
   mixins: [locomotive],
   head () {
@@ -160,6 +163,7 @@ export default {
   top: 10vw;
   transform: translateX(-50%);
   user-select: none;
+  pointer-events: none;
 }
 
 .caps {

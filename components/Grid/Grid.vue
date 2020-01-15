@@ -1,7 +1,7 @@
 <template>
-  <section>
+  <div class="grid">
       <slot />
-  </section>
+  </div>
 </template>
 
 <script>
@@ -11,15 +11,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section {
-  @include grid;
 
-  & > div {
-    @include grid-column-end(2);
-
-    @include breakpoint('medium+') {
-        @include grid-column-end(6);
-    }
-  }
-}
 </style>

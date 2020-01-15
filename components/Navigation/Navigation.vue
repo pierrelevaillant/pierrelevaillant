@@ -5,7 +5,7 @@
       </div>
       <div class="col-6">
         <nuxt-link to="/">Info</nuxt-link>,&nbsp;
-        <nuxt-link to="/photography" class="">Photography</nuxt-link>
+        <nuxt-link to="/jpgs" class="">JPGS</nuxt-link>
       </div>
   </nav>
 </template>

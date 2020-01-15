@@ -43,6 +43,10 @@ export default {
   */
   plugins: [
     {
+      src: "@/plugins/lazysizes.js",
+      mode: "client"
+    },
+    {
       src: "@/plugins/locomotiveScroll.js",
       mode: "client"
     },
