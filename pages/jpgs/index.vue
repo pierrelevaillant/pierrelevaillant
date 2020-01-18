@@ -4,12 +4,12 @@
     <SpacingLarge />
 
     <Grid data-scroll>
-        <div v-for="(gallery, index) in galleries" :key="gallery.id" class="m-gallery" :class="gallery.data.classnames[0].text">
+        <div v-for="(gallery, index) in galleries" :key="gallery.id" class="m-gallery" :class="gallery.data.classnames ? gallery.data.classnames[0].text : ''">
           <nuxt-link :to="'/jpgs/' + gallery.uid">
-            <ImageResponsive :data-src="gallery.data.cover.url" :alt="gallery.data.cover.alt" :aspectRatio="'4/3'" />
+            <ImageResponsive :image="gallery.data.cover" :aspectRatio="'4/3'" />
             <div class="m-gallery__title">
               <div><span>{{ ( index < 10 ? '0' : '' ) + (index + 1).toString()  }}</span></div>
-              <div><span :data-count="gallery.data.images.length + ' imgs'" :data-title="gallery.data.title[0].text"></span></div>
+              <div><span v-if="gallery.data.title" :data-count="gallery.data.images.length + ' imgs'" :data-title="gallery.data.title[0].text"></span></div>
             </div>
           </nuxt-link>
         </div>

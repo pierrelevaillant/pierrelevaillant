@@ -1,20 +1,36 @@
 <template>
   <div>
-    <figure
+    <picture
+      v-if="image"
       :class="[
         objectFit !== '' ? 'is-' + objectFit : '',
         imgAspectRatio
       ]"
     >
-      <slot>
-        <img
-          class="lazyload"
-          :data-src="dataSrc"
-          :alt="alt"
-        >
-      </slot>
-    </figure>
-    <p v-if="caption">{{ caption }}</p>
+      <!--[if IE 9]><video style="display: none;><![endif]-->
+      <source
+        v-if="image.small"
+        :data-srcset="image.small.url"
+        :media="'(max-width:' + image.small.dimensions.width + ')'"
+      />
+      <source
+        v-if="image.medium"
+        :data-srcset="image.medium.url"
+        :media="'(max-width:' + image.medium.dimensions.width + ')'"
+      />
+      <source
+        v-if="image.large"
+        :data-srcset="image.large.url"
+        :media="'(max-width:' + image.large.dimensions.width + ')'"
+      />
+      <source
+        :data-srcset="image.large ? image.large.url : image.url" />
+      <!--[if IE 9]></video><![endif]-->
+      <img
+        :data-src="image.large ? image.large.url : image.url"
+        class="lazyload"
+        :alt="image.alt" />
+    </picture>
   </div>
 </template>
 
@@ -22,39 +38,25 @@
 export default {
   name: 'ImageResponsive',
   props: {
-    // The image URL you want to show
-    dataSrc: {
+    image: {
       required: true,
-      // `'cat.jpg'`
-      type: String
-    },
-    /**
-     * Add alternative text to the image if necessary (for example, if it's not for decoration).
-    */
-    alt: {
-      type: String,
-      default: null
-    },
-    /**
-     * Add a caption below the image if you need it
-    */
-    caption: {
-      type: String,
-      default: null
+      type: Object,
+      default: null,
     },
     /**
      * Define image ratio
     */
     aspectRatio: {
+      required: false,
       type: String,
       default: 'aspect-ratio-16/9'
     },
     // Specify how the image/video will fit the container
     objectFit: {
-      default: 'cover',
       required: false,
       // `'cover'` / `'contain'`
-      type: String
+      type: String,
+      default: 'cover',
     },
   },
   computed: {
