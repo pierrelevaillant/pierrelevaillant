@@ -2,22 +2,9 @@
   <section>
     <div v-swiper:mySwiper="swiperOption">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <ImageResponsive :data-src="require('~/assets/images/02/_thumb.jpg')" alt="Sed ut perspiciatis unde omnis" :aspectRatio="'4/3'" />
+      <div v-for="image in gallery.images" :key="image.id" class="swiper-slide">
+        <ImageResponsive :data-src="image.image.url" :alt="image.image.alt" :aspectRatio="'4/3'" />
       </div>
-      <div class="swiper-slide">
-        <ImageResponsive :data-src="require('~/assets/images/02/01.jpg')" alt="Sed ut perspiciatis unde omnis" :aspectRatio="'4/3'" />
-      </div>
-      <div class="swiper-slide">
-        <ImageResponsive :data-src="require('~/assets/images/02/02.jpg')" alt="Sed ut perspiciatis unde omnis" :aspectRatio="'4/3'" />
-      </div>
-      <div class="swiper-slide">
-        <ImageResponsive :data-src="require('~/assets/images/02/03.jpg')" alt="Sed ut perspiciatis unde omnis" :aspectRatio="'4/3'" />
-      </div>
-      <div class="swiper-slide">
-        <ImageResponsive :data-src="require('~/assets/images/02/04.jpg')" alt="Sed ut perspiciatis unde omnis" :aspectRatio="'4/3'" />
-      </div>
-
     </div>
     <button class="a-button-prev"></button>
     <button class="a-button-next"></button>
@@ -27,6 +14,8 @@
 </template>
 
 <script>
+import Prismic from "prismic-javascript"
+
 import ImageResponsive from '~/components/Image/ImageResponsive'
 import SpacingLarge from '~/components/Spacing/SpacingLarge'
 import SpacingMedium from '~/components/Spacing/SpacingMedium'
@@ -47,16 +36,23 @@ export default {
   },
   head () {
     return {
-      title: 'Photography — Pierre Le Vaillant',
+      title: this.gallery.title[0].text + ' — Pierre Le Vaillant',
+    }
+  },
+  async asyncData ({ params, error, $prismic }) {
+    try {
+      const gallery = await $prismic.api.getByUID('galleries', params.uid)
+
+      return {
+        gallery: gallery.data,
+      }
+    } catch (e) {
+      error({ statusCode: 404, message: 'Gallery not found' })
     }
   },
   data () {
     return {
-      banners: [
-        '~/assets/images/humanly/logotype.jpg',
-        '~/assets/images/humanly/logotype.jpg',
-        '~/assets/images/humanly/logotype.jpg',
-      ],
+      gallery: null,
       swiperOption: {
         a11y: {
           prevSlideMessage: 'Previous slide',
@@ -81,11 +77,6 @@ export default {
           type: 'custom',
           renderCustom: function (swiper, current, total) {
               return '<div>' + current + '</div><div>of</div><div>' + total + '</div>';
-          }
-        },
-        on: {
-          tap() {
-            //this.slideNext();
           }
         },
       }

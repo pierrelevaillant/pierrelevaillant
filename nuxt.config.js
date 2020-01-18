@@ -1,4 +1,3 @@
-
 export default {
   mode: 'universal',
   /*
@@ -15,12 +14,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      {
-        src:
-          "https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver",
-        defer: true
-      }
-    ]
+      { src: "https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver", defer: true },
+    ],
   },
   /*
   ** Customize the progress-bar color
@@ -30,12 +25,12 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/scss/app.scss',
-    '@/node_modules/swiper/dist/css/swiper.css'
+    '~/assets/scss/app.scss',
+    '~/node_modules/swiper/dist/css/swiper.css'
   ],
   styleResources: {
     scss: [
-      '@/assets/scss/app.scss',
+      '~/assets/scss/app.scss',
     ]
   },
   /*
@@ -43,14 +38,14 @@ export default {
   */
   plugins: [
     {
-      src: "@/plugins/lazysizes.js",
+      src: "~/plugins/lazysizes.js",
       mode: "client"
     },
     {
-      src: "@/plugins/locomotiveScroll.js",
+      src: "~/plugins/locomotiveScroll.js",
       mode: "client"
     },
-    { src: '@/plugins/swiper.js',
+    { src: '~/plugins/swiper.js',
       mode: "client"
     },
   ],
@@ -60,14 +55,23 @@ export default {
   buildModules: [
     ['@nuxtjs/google-analytics', {
       id: 'UA-58743682-1'
-    }]
+    }],
+    '~/modules/crawler',
+    '~/modules/static',
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/prismic',
     '@nuxtjs/style-resources',
   ],
+  /*
+  ** Prismic configuration
+  */
+  prismic: {
+    endpoint: 'https://pierrelevaillant.cdn.prismic.io/api/v2'
+  },
   /*
   ** Build configuration
   */
@@ -86,5 +90,5 @@ export default {
       }
     },
     extend(config, ctx) {}
-  }
+  },
 }

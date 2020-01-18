@@ -13,10 +13,10 @@
   "dependencies": {
     "@bazzite/nuxt-optimized-images": "^0.3.0",
     "@nuxt/http": "^0.3.8",
+    "@nuxtjs/prismic": "^1.0.0",
     "lazysizes": "^5.2.0",
     "locomotive-scroll": "^3.2.7",
     "nuxt": "^2.0.0",
-    "nuxt-lazyimage": "0.0.14",
     "postcss-nested": "^4.2.1",
     "vue-awesome-swiper": "^3.1.3"
   },

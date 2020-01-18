@@ -1,7 +1,7 @@
 <template>
-  <nav class="grid grid-gap-xs">
+  <nav class="grid">
       <div class="col-6">
-        <!-- <nuxt-link to="/" class="root">Pierre Le Vaillant</nuxt-link> -->
+        <nuxt-link to="/" class="root">Pierre Le Vaillant</nuxt-link>
       </div>
       <div class="col-6">
         <nuxt-link to="/">Info</nuxt-link>,&nbsp;
@@ -9,21 +9,6 @@
       </div>
   </nav>
 </template>
-
-<script>
-import { store } from "~/store/store.js";
-
-export default {
-  computed: {
-    navStyle() {
-      console.debug("STORE ISNAMVAL", store.isNavSmall);
-      return {
-        padding: store.isNavSmall ? "4px 0" : "10px 0"
-      };
-    }
-  }
-};
-</script>
 
 <style lang="scss" scoped>
 nav {

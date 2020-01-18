@@ -1,21 +1,23 @@
 <template>
-  <section class="o-galleries" data-scroll-section>
+  <section class="o-galleries" v-if="galleries.length !== 0" data-scroll-section>
 
     <SpacingLarge />
 
-      <Grid data-scroll>
-          <div class="m-gallery col-8 col-6@md">
-            <nuxt-link to="/jpgs/01">
-              <ImageResponsive :data-src="require('~/assets/images/01/_thumb.jpg')" alt="Sed ut perspiciatis unde omnis" :aspectRatio="'4/3'" />
-              <div class="m-gallery__title">
-                <div><span>01</span></div>
-                <div><span data-count="33 imgs" data-title="California"></span></div>
-              </div>
-            </nuxt-link>
-          </div>
-      </Grid>
+    <Grid data-scroll>
+        <div v-for="(gallery, index) in galleries" :key="gallery.id" class="m-gallery" :class="gallery.data.classnames[0].text">
+          <nuxt-link :to="'/jpgs/' + gallery.uid">
+            <ImageResponsive :data-src="gallery.data.cover.url" :alt="gallery.data.cover.alt" :aspectRatio="'4/3'" />
+            <div class="m-gallery__title">
+              <div><span>{{ ( index < 10 ? '0' : '' ) + (index + 1).toString()  }}</span></div>
+              <div><span :data-count="gallery.data.images.length + ' imgs'" :data-title="gallery.data.title[0].text"></span></div>
+            </div>
+          </nuxt-link>
+        </div>
+    </Grid>
 
-      <SpacingLarge />
+    <SpacingLarge />
+
+      <!-- <SpacingLarge />
 
       <Grid data-scroll>
           <div class="m-gallery col-start-6 col-6 col-start-8@md col-4@md">
@@ -57,7 +59,7 @@
           </div>
       </Grid>
 
-      <SpacingLarge />
+      <SpacingLarge /> -->
 
   </section>
 </template>
@@ -88,17 +90,32 @@ export default {
   mixins: [locomotive],
   head () {
     return {
-      title: 'Photography — Pierre Le Vaillant',
+      title: 'JPGS — Pierre Le Vaillant',
     }
-  }
+  },
+  async asyncData({ $prismic, error }) {
+    try {
+      const galleries = await $prismic.api.query(
+        $prismic.predicates.at("document.type", "galleries"),
+        { orderings : '[my.galleries.date desc]' }
+      )
+
+      return {
+        galleries: galleries.results,
+      }
+    } catch (e) {
+        error({ statusCode: 404, message: 'Page not found' })
+    }
+  },
 }
 </script>
 
 <style lang="scss">
-.o-galleries {
-
-}
 .m-gallery {
+  & + .m-gallery {
+    margin-top: var(--spacing-large);
+  }
+
   &__title {
     display: flex;
     text-transform: uppercase;
