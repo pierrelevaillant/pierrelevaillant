@@ -1,3 +1,11 @@
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  user-select: none;
+}
+
 body {
   background: var(--color-pastel);
   color: var(--color-black);
@@ -14,8 +22,6 @@ body {
   @include font-smoothing();
 }
 
-#js-scroll {
+.has-scroll-smooth body {
   overflow: hidden;
-  box-sizing: border-box;
-  position: relative;
 }

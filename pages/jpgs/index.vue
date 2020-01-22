@@ -4,7 +4,7 @@
     <SpacingLarge />
 
     <Grid data-scroll>
-        <div v-for="(gallery, index) in galleries" :key="gallery.id" class="m-gallery" :class="gallery.data.classnames ? gallery.data.classnames[0].text : ''">
+        <div v-for="(gallery, index) in galleries" :key="gallery.id" class="m-gallery" :class="layout[index] ? layout[index] :''">
           <nuxt-link :to="'/jpgs/' + gallery.uid">
             <ImageResponsive :image="gallery.data.cover" :aspectRatio="'4/3'" />
             <div class="m-gallery__title">
@@ -91,6 +91,15 @@ export default {
   head () {
     return {
       title: 'JPGS — Pierre Le Vaillant',
+    }
+  },
+  data() {
+    return {
+      layout: [
+        'col-start-6 col-6 col-start-8@md col-4@md',
+        'col-start-2 col-7 col-4@md',
+        'col-7 col-start-5 col-start-7@md col-5@md'
+      ]
     }
   },
   async asyncData({ $prismic, error }) {

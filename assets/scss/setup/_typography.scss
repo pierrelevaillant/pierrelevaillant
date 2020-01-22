@@ -10,7 +10,7 @@
       url('~assets/fonts/SuisseIntl.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: auto;
+  font-display: fallback
 }
 
 @font-face {
@@ -19,7 +19,7 @@
       url('~assets/fonts/SuisseIntl-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
-  font-display: auto;
+  font-display: fallback
 }
 
 
@@ -35,7 +35,7 @@ $global-font-size: 100% !default;
 
 // the fall back font family string. eg. Helvetica, Arial, sans-serif.
 $serif-font: serif;
-$sans-serif-font: 'Suisse', sans-serif;
+$sans-serif-font: 'Suisse', "Helvetica Neue", Helvetica, Arial, sans-serif;
 // cap heights of the fonts - measure height of a capital H at 100px and then divide by 100
 $cap-heights: (
   serif: .66,
@@ -112,7 +112,7 @@ $f-body: generate-font-obj(
     settings: (
       'xsmall': (font-size: 16, line-height: 22, letter-spacing: -0.01em, font-weight: normal),
       'small+': (font-size: 18, line-height: 22),
-      'medium+': (font-size: 24, line-height: 25),
+      'medium+': (font-size: 22, line-height: 25),
     )
   )
 );

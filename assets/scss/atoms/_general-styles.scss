@@ -57,3 +57,14 @@ a {
   background: var(--color-black);
   color: var(--color-white);
 }
+
+.js-fade {
+  opacity: 0;
+  transition: opacity 1.2s var(--easing-fade), transform 1s var(--easing-translate);
+  transform: translate3d(0, 1vw, 0);
+
+  &.is-inview {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -3,7 +3,7 @@
     <div v-swiper:mySwiper="swiperOption">
     <div class="swiper-wrapper">
       <div v-for="image in gallery.images" :key="image.id" class="swiper-slide">
-        <ImageResponsive v-if="image" :image="image" :aspectRatio="'4/3'" />
+        <ImageResponsive v-if="image" :image="image.image" :aspectRatio="'4/3'" />
       </div>
     </div>
     <button class="a-button-prev"></button>
