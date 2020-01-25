@@ -118,7 +118,7 @@ export default {
   ],
   head () {
     return {
-      title: 'Pierre Le Vaillant — Designer and Creative Developer',
+      title: 'Pierre Le Vaillant – Designer and Creative Developer',
     }
   },
 }
@@ -127,9 +127,16 @@ export default {
 <style lang="scss" scoped>
 .introduction {
   font-size: 7vw;
+  letter-spacing: -0.025rem;
+  line-height: 1.05;
+
+  a {
+    font-style: italic;
+  }
 
   @include breakpoint('medium+') {
     font-size: 5vw;
+    letter-spacing: -0.1rem;
   }
 
   span {

@@ -7,11 +7,11 @@ html.has-scroll-dragging {
 }
 
 body {
-  color: var(--color-black);
-  background: var(--color-a);
+  color: var(--color-text);
+  background: var(--color-gray);
   background:
   radial-gradient(
-   at center, var(--color-a), var(--color-b)
+   at center, var(--color-gray), var(--color-gray-darker)
   );
   font-family: $sans-serif-font;
   font-size: $global-font-size;

@@ -3,7 +3,7 @@
 
     <SpacingLarge />
 
-    <Grid data-scroll>
+    <div class="grid" data-scroll>
         <div v-for="(gallery, index) in galleries" :key="gallery.id" class="m-gallery" :class="layout[index] ? layout[index] :''">
           <nuxt-link :to="'/jpgs/' + gallery.uid">
             <ImageResponsive :image="gallery.data.cover" :aspectRatio="'4/3'" />
@@ -13,7 +13,7 @@
             </div>
           </nuxt-link>
         </div>
-    </Grid>
+    </div>
 
     <SpacingLarge />
 

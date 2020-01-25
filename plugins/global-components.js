@@ -1,5 +1,6 @@
 import Vue from "vue"
 
+import Navigation from '~/components/Navigation/Navigation.vue'
 import ImageResponsive from "~/components/Image/ImageResponsive"
 import SpacingLarge from '~/components/Spacing/SpacingLarge'
 import SpacingMedium from '~/components/Spacing/SpacingMedium'
@@ -15,3 +16,4 @@ Vue.component("SpacingSmall", SpacingSmall)
 Vue.component("SpacingTiny", SpacingTiny)
 Vue.component("SingleNumber", SingleNumber)
 Vue.component("Quote", Quote)
+Vue.component("Navigation", Navigation)
