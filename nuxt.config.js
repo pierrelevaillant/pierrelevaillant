@@ -70,6 +70,17 @@ export default {
     endpoint: 'https://pierrelevaillant.cdn.prismic.io/api/v2'
   },
   /*
+  ** Preload font
+  */
+  bundleRenderer: {
+    shouldPreload: (file, type) => {
+      if (type === 'font') {
+        return /.woff2/.test(file)
+      }
+      return ['script', 'style'].includes(type)
+    }
+  },
+  /*
   ** Build configuration
   */
   build: {

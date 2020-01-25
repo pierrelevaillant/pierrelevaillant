@@ -4,12 +4,12 @@
     <SpacingLarge />
 
     <div class="grid grid-gap-xs">
-      <div class="col-10">
+      <div class="col-10@md">
         <div class="introduction js-fade" data-scroll>
           <span>French Designer and Creative Developer based in Paris, currently working at (<a href="http://www.area17.com" target="_blank">AREA 17</a>). Passionate about technology, visual communication and photography.</span><span>Aim to deliver efficient graphic systems and interfaces for cultural, commercial and editorial clients.</span>
         </div>
       </div>
-      <div class="col-2 js-fade" style="transition-delay:.1;" data-scroll data-scroll-speed="1">
+      <div class="introduction-links col-2@md js-fade" style="transition-delay:.1;" data-scroll data-scroll-speed="1">
         <ul>
           <li><a href="https://www.linkedin.com/in/pierrelevaillant/" title="LinkedIn" target="_blank">↳ &nbsp;LinkedIn</a></li>
           <li><a href="https://www.instagram.com/pierre.levaillant/" title="Instagram" target="_blank">↳ &nbsp;Instagram</a></li>
@@ -140,6 +140,12 @@ export default {
   span {
     display: block;
     text-indent: 8vw;
+  }
+
+  &-links {
+    @include breakpoint('small-') {
+      margin-top: 4vh;
+    }
   }
 }
 .caps {

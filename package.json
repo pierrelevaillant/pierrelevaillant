@@ -5,13 +5,12 @@
   "author": "Pierre Le Vaillant",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "HOST=0.0.0.0 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@bazzite/nuxt-optimized-images": "^0.3.0",
     "@nuxt/http": "^0.3.8",
     "@nuxtjs/prismic": "^1.0.0",
     "lazysizes": "^5.2.0",
@@ -26,8 +25,6 @@
     "imagemin-mozjpeg": "^8.0.0",
     "lqip-loader": "^2.2.0",
     "node-sass": "^4.13.0",
-    "responsive-loader": "^1.2.0",
-    "sass-loader": "^8.0.0",
-    "webp-loader": "^0.6.0"
+    "sass-loader": "^8.0.0"
   }
 }
