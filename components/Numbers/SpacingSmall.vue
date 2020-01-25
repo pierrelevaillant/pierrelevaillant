@@ -3,8 +3,12 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 div {
   height: 20px;
+
+   @include breakpoint('medium+') {
+    height: 20px;
+  }
 }
 </style>

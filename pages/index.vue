@@ -11,9 +11,9 @@
       </div>
       <div class="introduction-links col-2@md js-fade" style="transition-delay:.1;" data-scroll data-scroll-speed="1">
         <ul>
-          <li><a href="https://www.linkedin.com/in/pierrelevaillant/" title="LinkedIn" target="_blank">↳ &nbsp;LinkedIn</a></li>
-          <li><a href="https://www.instagram.com/pierre.levaillant/" title="Instagram" target="_blank">↳ &nbsp;Instagram</a></li>
-          <li><a href="https://twitter.com/levaillantp" title="Twitter" target="_blank">↳ &nbsp;Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/pierrelevaillant/" title="LinkedIn" target="_blank" rel="noopener noreferrer">↳ &nbsp;LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/pierre.levaillant/" title="Instagram" target="_blank" rel="noopener noreferrer">↳ &nbsp;Instagram</a></li>
+          <li><a href="https://twitter.com/levaillantp" title="Twitter" target="_blank" rel="noopener noreferrer">↳ &nbsp;Twitter</a></li>
         </ul>
       </div>
     </div>
@@ -26,23 +26,31 @@
           <p>Experiences</p>
         </div>
         <div class="col-6 js-fade" data-scroll>
-          <p>→ <a href="https://www.area17.com/" target="_blank" title="AREA 17">AREA 17</a><br>
-          Designer<br>
-          (2017 — Present)<br><br>
-          → <a href="https://fantasy.co/" target="_blank" title="Fantasy Interactive">Fantasy</a><br>
-          Design Intern<br>
-          (2016)<br><br>
-          → <a href="https://www.nurun.com/" target="_blank" title="Publicis Nurun">Pubicis Nurun</a><br>
-          Junior Art Director<br>
-          (2015)</p>
+          <ul class="entries">
+            <li>
+              → <a href="https://www.area17.com/" target="_blank" rel="noopener noreferrer" title="AREA 17">AREA 17</a><br>
+              Designer<br>
+              (2017 — Present)
+            </li>
+            <li>
+              → <a href="https://fantasy.co/" target="_blank" rel="noopener noreferrer" title="Fantasy Interactive">Fantasy</a><br>
+              Design Intern<br>
+              (2016)
+            </li>
+            <li>
+              → <a href="https://www.nurun.com/" target="_blank" rel="noopener noreferrer" title="Publicis Nurun">Pubicis Nurun</a><br>
+              Junior Art Director<br>
+              (2015)
+            </li>
+          </ul>
         </div>
         <SpacingSmall />
         <div class="col-6 caps js-fade" data-scroll>
           <p>Education</p>
         </div>
         <div class="col-6 js-fade" data-scroll>
-          <ul>
-            <li>→ ICTs Master Degree<br>HETIC<br>(2017)<br><br></li>
+          <ul class="entries">
+            <li>→ ICTs Master Degree<br>HETIC<br>(2017)</li>
             <li>→ Computing Sciences DUT<br>Université du Maine<br>(2014)</li>
           </ul>
         </div>
@@ -135,7 +143,11 @@ export default {
 
 <style lang="scss" scoped>
 .introduction {
-  font-size: 5vw;
+  font-size: 7vw;
+
+  @include breakpoint('medium+') {
+    font-size: 5vw;
+  }
 
   span {
     display: block;
@@ -148,6 +160,15 @@ export default {
     }
   }
 }
+
+li + li {
+  margin-top: 5px;
+}
+
+.entries li + li {
+  margin-top: var(--spacing-tiny);
+}
+
 .caps {
   text-transform: uppercase;
 

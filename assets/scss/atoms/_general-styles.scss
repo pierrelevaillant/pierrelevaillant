@@ -2,6 +2,7 @@ h2,
 h3,
 p,
 ul,
+li,
 ol,
 dl {
   @include f-body;
@@ -14,7 +15,7 @@ h4 {
   font-weight: normal;
 }
 
-ul
+ul,
 li {
   list-style-type: none;
 }
