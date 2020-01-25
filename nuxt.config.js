@@ -34,6 +34,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/global-components.js',
     {
       src: "~/plugins/lazysizes.js",
       mode: "client"

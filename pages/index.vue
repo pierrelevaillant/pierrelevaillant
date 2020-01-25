@@ -1,5 +1,5 @@
 <template>
-  <section class="container o-about" data-scroll-section>
+  <section class="grid-wrapper o-about" data-scroll-section>
 
     <SpacingLarge />
 
@@ -112,24 +112,7 @@
 <script>
 import locomotive from "~/mixins/locomotive.js";
 
-import SpacingLarge from '~/components/Spacing/SpacingLarge'
-import SpacingMedium from '~/components/Spacing/SpacingMedium'
-import SpacingSmall from '~/components/Spacing/SpacingSmall'
-import SpacingTiny from '~/components/Spacing/SpacingTiny'
-import SingleNumber from '~/components/Numbers/SingleNumber'
-import Quote from '~/components/Blockquote/Quote'
-import ImageResponsive from '~/components/Image/ImageResponsive'
-
 export default {
-  components: {
-    SpacingLarge,
-    SpacingMedium,
-    SpacingSmall,
-    SpacingTiny,
-    SingleNumber,
-    Quote,
-    ImageResponsive
-  },
   mixins: [
     locomotive
   ],

@@ -16,24 +16,7 @@
 <script>
 import Prismic from "prismic-javascript"
 
-import ImageResponsive from '~/components/Image/ImageResponsive'
-import SpacingLarge from '~/components/Spacing/SpacingLarge'
-import SpacingMedium from '~/components/Spacing/SpacingMedium'
-import SpacingSmall from '~/components/Spacing/SpacingSmall'
-import SpacingTiny from '~/components/Spacing/SpacingTiny'
-import SingleNumber from '~/components/Numbers/SingleNumber'
-import Quote from '~/components/Blockquote/Quote'
-
 export default {
-  components: {
-    SpacingLarge,
-    SpacingMedium,
-    SpacingSmall,
-    SpacingTiny,
-    SingleNumber,
-    Quote,
-    ImageResponsive
-  },
   head () {
     return {
       title: this.gallery.title[0].text + ' — Pierre Le Vaillant',

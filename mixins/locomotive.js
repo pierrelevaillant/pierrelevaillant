@@ -1,5 +1,3 @@
-const OFFSET = 350;
-
 export default {
   watch: {
     $route() {
