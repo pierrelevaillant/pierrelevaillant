@@ -34,7 +34,7 @@
             </li>
             <li>
               → <a href="https://fantasy.co/" target="_blank" rel="noopener noreferrer" title="Fantasy Interactive">Fantasy</a><br>
-              Design Intern<br>
+              Product Design Intern<br>
               (2016)
             </li>
             <li>
@@ -50,7 +50,7 @@
         </div>
         <div class="col-6 js-fade" data-scroll>
           <ul class="entries">
-            <li>→ ICTs Master Degree<br>HETIC<br>(2017)</li>
+            <li>→ ICTs Master Degree<br><a href="https://www.hetic.net/" target="_blank" rel="noopener noreferrer" title="HETIC">HETIC</a><br>(2017)</li>
             <li>→ Computing Sciences DUT<br>Université du Maine<br>(2014)</li>
           </ul>
         </div>
@@ -97,13 +97,12 @@
         </div>
         <div class="col-6 js-fade" data-scroll>
           <ul>
-            <li>David Lamothe</li>
-            <li>Martin Rettenbacher</li>
+            <li><a href="http://www.davidlamothe.com/" target="_blank" rel="noopener noreferrer" title="David Lamothe">David Lamothe</a</li>
+            <li><a href="http://www.martinrettenbacher.com/" target="_blank" rel="noopener noreferrer" title="Martin Rettenbacher">Martin Rettenbacher</a></li>
             <li></li>
           </ul>
         </div>
       </div>
-
       <SpacingLarge />
     </div>
   </section>
@@ -148,6 +147,12 @@ export default {
     @include breakpoint('small-') {
       margin-top: 4vh;
     }
+  }
+}
+
+li {
+  a:hover {
+    font-style: italic;
   }
 }
 

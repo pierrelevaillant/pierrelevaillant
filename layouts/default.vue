@@ -17,7 +17,7 @@ export default {
       let mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
       let mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
 
-      document.body.style.background = 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, var(--color-a), var(--color-b))'
+      document.body.style.background = 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, var(--color-gray), var(--color-gray-darker))'
       }
   }
 }
