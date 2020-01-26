@@ -1,15 +1,15 @@
 <template>
-  <section class="grid-wrapper o-about" data-scroll-section>
+  <section class="grid-wrapper">
 
     <SpacingLarge />
 
-    <div class="grid grid-gap-xs">
-      <div class="col-10@md">
+    <div class="grid" data-scroll-section>
+      <div class="col-10@lg">
         <div class="introduction js-fade" data-scroll>
           <span>French Designer and Creative Developer based in Paris, currently working at (<a href="http://www.area17.com" target="_blank">AREA 17</a>). Passionate about technology, visual communication and photography.</span><span>Aim to deliver efficient graphic systems and interfaces for cultural, commercial and editorial clients.</span>
         </div>
       </div>
-      <div class="introduction-links col-2@md js-fade" style="transition-delay:.1;" data-scroll data-scroll-speed="1">
+      <div class="introduction-links col-2@lg js-fade" style="transition-delay:.1;" data-scroll>
         <ul>
           <li><a href="https://www.linkedin.com/in/pierrelevaillant/" title="LinkedIn" target="_blank" rel="noopener noreferrer">↳ &nbsp;LinkedIn</a></li>
           <li><a href="https://www.instagram.com/pierre.levaillant/" title="Instagram" target="_blank" rel="noopener noreferrer">↳ &nbsp;Instagram</a></li>
@@ -20,7 +20,7 @@
 
     <SpacingLarge />
 
-    <div data-scroll>
+    <div data-scroll-section>
       <div class="grid grid-gap-xs">
         <div class="col-6 caps js-fade" data-scroll>
           <p>Experiences</p>
@@ -134,6 +134,11 @@ export default {
   }
 
   @include breakpoint('medium+') {
+    font-size: 6vw;
+    letter-spacing: -0.075rem;
+  }
+
+  @include breakpoint('large+') {
     font-size: 5vw;
     letter-spacing: -0.1rem;
   }
@@ -144,9 +149,7 @@ export default {
   }
 
   &-links {
-    @include breakpoint('small-') {
-      margin-top: 4vh;
-    }
+    margin-top: 2vh;
   }
 }
 
