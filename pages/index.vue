@@ -73,7 +73,6 @@
           </ul>
         </div>
         <SpacingSmall />
-        <hr>
         <div class="col-6 caps js-fade" data-scroll>
           <p>Selected Clients</p>
         </div>
