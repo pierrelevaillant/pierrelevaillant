@@ -11,9 +11,9 @@
       </div>
       <div class="introduction-links col-2@lg js-fade" style="transition-delay:.1;" data-scroll>
         <ul>
-          <li><a href="https://www.linkedin.com/in/pierrelevaillant/" title="LinkedIn" target="_blank" rel="noopener noreferrer"><span>⬈</span>LINKEDIN</a></li>
-          <li><a href="https://www.instagram.com/pierre.levaillant/" title="Instagram" target="_blank" rel="noopener noreferrer"><span>⬈</span>INSTAGRAM</a></li>
-          <li><a href="https://twitter.com/levaillantp" title="Twitter" target="_blank" rel="noopener noreferrer"><span>⬈</span>TWITTER</a></li>
+          <li><a href="https://www.linkedin.com/in/pierrelevaillant/" title="LinkedIn" target="_blank" rel="noopener noreferrer">LINKEDIN</a></li>
+          <li><a href="https://www.instagram.com/pierre.levaillant/" title="Instagram" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
+          <li><a href="https://twitter.com/levaillantp" title="Twitter" target="_blank" rel="noopener noreferrer">TWITTER</a></li>
         </ul>
       </div>
     </div>
@@ -164,9 +164,22 @@ export default {
   &-links {
     margin-top: 2vh;
 
-    a span {
-      margin-right: 1rem;
-      font-size: 130%;
+    a {
+      position: relative;
+      padding-left: 1.6rem;
+
+      &::before {
+        content: '↗';
+        left: 0;
+        top: -4px;
+        font-size: 120%;
+        position: absolute;
+        display: inline-block;
+      }
+
+      @include breakpoint('large+') {
+        padding-left: 2rem;
+      }
     }
   }
 }
