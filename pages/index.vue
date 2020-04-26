@@ -124,13 +124,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+:hover,
+:active {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+  border: 1px dotted #000;
+}
+
 .introduction {
-  font-size: 7vw;
+  font-size: 8vw;
   letter-spacing: -0.025rem;
-  line-height: 1.05;
+  line-height: 100%;
+  padding-right: 2%;
 
   a {
-    font-style: italic;
+    font-style: normal;
   }
 
   @include breakpoint('medium+') {
@@ -139,7 +151,8 @@ export default {
   }
 
   @include breakpoint('large+') {
-    font-size: 5vw;
+    padding-right: 0;
+    font-size: 5.5vw;
     letter-spacing: -0.1rem;
   }
 
@@ -153,14 +166,8 @@ export default {
   }
 }
 
-li {
-  a:hover {
-    font-style: italic;
-  }
-}
-
 li + li {
-  margin-top: 5px;
+  margin-top: .5rem;
 }
 
 .entries li + li {

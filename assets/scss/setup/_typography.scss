@@ -4,21 +4,30 @@
 // Use below @font-face declaration template to load fonts
 // Copy/paste for each font to be loaded
 
-@font-face {
-  font-family: "ss";
-  src: url('~assets/fonts/NeueHaasGrotTextRound-55Roman-Web.woff2') format('woff2'),
-      url('~assets/fonts/NeueHaasGrotTextRound-55Roman-Web.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: "ss";
+//   src: url('~assets/fonts/NeueHaasGrotTextRound-55Roman-Web.woff2') format('woff2'),
+//       url('~assets/fonts/NeueHaasGrotTextRound-55Roman-Web.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "ss";
+//   src: url('~assets/fonts/NeueHaasGrotTextRound-56Italic-Web.woff2') format('woff2'),
+//       url('~assets/fonts/NeueHaasGrotTextRound-56Italic-Web.woff') format('woff');
+//   font-weight: normal;
+//   font-style: italic;
+//   font-display: swap;
+// }
 
 @font-face {
-  font-family: "ss";
-  src: url('~assets/fonts/NeueHaasGrotTextRound-56Italic-Web.woff2') format('woff2'),
-      url('~assets/fonts/NeueHaasGrotTextRound-56Italic-Web.woff') format('woff');
+  font-family: "MG";
+  src: url('~assets/fonts/MG.woff') format('woff'),
+       url('~assets/fonts/MG.woff2') format('woff2');
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -34,7 +43,7 @@ $global-font-size: 100% !default;
 
 // the fall back font family string. eg. Helvetica, Arial, sans-serif.
 $serif-font: serif;
-$sans-serif-font: 'ss', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-serif-font: 'MG', "Helvetica Neue", Helvetica, Arial, sans-serif;
 // cap heights of the fonts - measure height of a capital H at 100px and then divide by 100
 $cap-heights: (
   serif: .66,
@@ -43,7 +52,7 @@ $cap-heights: (
   helvetica: .72,
   'Times New Roman': .67,
   'Roboto': .72,
-  'ss': .72
+  'MG': .72
 );
 
 // ####################################################
