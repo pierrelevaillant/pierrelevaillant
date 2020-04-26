@@ -68,6 +68,7 @@
             <li>Design specifications</li>
             <li>Brand books & guidelines</li>
             <li>Editorial design</li>
+            <li>Design system</li>
             <li>Mobile / App design</li>
             <li>Front-end development</li>
           </ul>
@@ -87,7 +88,7 @@
             <li>Salon des Entrepreneurs</li>
             <li>Van Cleef & Arpels</li>
             <li>Do The Green Thing</li>
-            <li>Céline</li>
+            <li>Celine</li>
           </ul>
         </div>
         <SpacingSmall />
@@ -96,9 +97,9 @@
         </div>
         <div class="col-6 js-fade" data-scroll>
           <ul>
-            <li><a href="http://www.davidlamothe.com/" target="_blank" rel="noopener noreferrer" title="David Lamothe">David Lamothe</a</li>
+            <li><a href="https://petesmart.co.uk/" target="_blank" rel="noopener noreferrer" title="Peter Smart">Peter Smart</a></li>
+            <li><a href="http://www.davidlamothe.com/" target="_blank" rel="noopener noreferrer" title="David Lamothe">David Lamothe</a></li>
             <li><a href="http://www.martinrettenbacher.com/" target="_blank" rel="noopener noreferrer" title="Martin Rettenbacher">Martin Rettenbacher</a></li>
-            <li></li>
           </ul>
         </div>
       </div>
