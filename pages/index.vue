@@ -11,9 +11,9 @@
       </div>
       <div class="introduction-links col-2@lg js-fade" style="transition-delay:.1;" data-scroll>
         <ul>
-          <li><a href="https://www.linkedin.com/in/pierrelevaillant/" title="LinkedIn" target="_blank" rel="noopener noreferrer">↳ &nbsp;LinkedIn</a></li>
-          <li><a href="https://www.instagram.com/pierre.levaillant/" title="Instagram" target="_blank" rel="noopener noreferrer">↳ &nbsp;Instagram</a></li>
-          <li><a href="https://twitter.com/levaillantp" title="Twitter" target="_blank" rel="noopener noreferrer">↳ &nbsp;Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/pierrelevaillant/" title="LinkedIn" target="_blank" rel="noopener noreferrer"><span>⬈</span>LINKEDIN</a></li>
+          <li><a href="https://www.instagram.com/pierre.levaillant/" title="Instagram" target="_blank" rel="noopener noreferrer"><span>⬈</span>INSTAGRAM</a></li>
+          <li><a href="https://twitter.com/levaillantp" title="Twitter" target="_blank" rel="noopener noreferrer"><span>⬈</span>TWITTER</a></li>
         </ul>
       </div>
     </div>
@@ -28,17 +28,17 @@
         <div class="col-6 js-fade" data-scroll>
           <ul class="entries">
             <li>
-              → <a href="https://www.area17.com/" target="_blank" rel="noopener noreferrer" title="AREA 17">AREA 17</a><br>
+              → &nbsp;<a href="https://www.area17.com/" target="_blank" rel="noopener noreferrer" title="AREA 17">AREA 17</a><br>
               Designer<br>
               (2017 — Present)
             </li>
             <li>
-              → <a href="https://fantasy.co/" target="_blank" rel="noopener noreferrer" title="Fantasy Interactive">Fantasy</a><br>
+              → &nbsp;<a href="https://fantasy.co/" target="_blank" rel="noopener noreferrer" title="Fantasy Interactive">Fantasy</a><br>
               Product Design Intern<br>
               (2016)
             </li>
             <li>
-              → <a href="https://www.nurun.com/" target="_blank" rel="noopener noreferrer" title="Publicis Nurun">Pubicis Nurun</a><br>
+              → &nbsp;<a href="https://www.nurun.com/" target="_blank" rel="noopener noreferrer" title="Publicis Nurun">Pubicis Nurun</a><br>
               Junior Art Director<br>
               (2015)
             </li>
@@ -163,11 +163,16 @@ export default {
 
   &-links {
     margin-top: 2vh;
+
+    a span {
+      margin-right: 1rem;
+      font-size: 130%;
+    }
   }
 }
 
 li + li {
-  margin-top: .5rem;
+  margin-top: 5px;
 }
 
 .entries li + li {
