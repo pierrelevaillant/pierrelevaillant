@@ -97,14 +97,7 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
-    'nuxt-purgecss',
   ],
-  /*
-  ** purgeCSS
-  */
-  purgeCSS: {
-    // your settings here
-  },
   /*
   ** Preload font
   */
