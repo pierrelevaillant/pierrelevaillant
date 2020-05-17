@@ -28,17 +28,17 @@
         <div class="col-6 js-fade" data-scroll>
           <ul class="entries">
             <li>
-              → &nbsp;<a href="https://www.area17.com/" target="_blank" rel="noopener noreferrer" title="AREA 17">AREA 17</a><br>
-              Designer<br>
+              → &nbsp;<a href="https://www.area17.com/" target="_blank" rel="noopener nofollow" >AREA 17</a><br>
+              Designer & Interface Engineer<br>
               (2017 — Present)
             </li>
             <li>
-              → &nbsp;<a href="https://fantasy.co/" target="_blank" rel="noopener noreferrer" title="Fantasy Interactive">Fantasy</a><br>
+              → &nbsp;<a href="https://fantasy.co/" target="_blank" rel="noopener nofollow">Fantasy</a><br>
               Product Design Intern<br>
               (2016)
             </li>
             <li>
-              → &nbsp;<a href="https://www.nurun.com/" target="_blank" rel="noopener noreferrer" title="Publicis Nurun">Pubicis Nurun</a><br>
+              → &nbsp;<a href="https://www.nurun.com/" target="_blank" rel="noopener nofollow">Pubicis Nurun</a><br>
               Junior Art Director<br>
               (2015)
             </li>
@@ -50,7 +50,7 @@
         </div>
         <div class="col-6 js-fade" data-scroll>
           <ul class="entries">
-            <li>→ ICTs Master Degree<br><a href="https://www.hetic.net/" target="_blank" rel="noopener noreferrer" title="HETIC">HETIC</a><br>(2017)</li>
+            <li>→ ICTs Master Degree<br><a href="https://www.hetic.net/" target="_blank" rel="noopener nofollow">HETIC</a><br>(2017)</li>
             <li>→ Computing Sciences DUT<br>Université du Maine<br>(2014)</li>
           </ul>
         </div>
@@ -97,9 +97,9 @@
         </div>
         <div class="col-6 js-fade" data-scroll>
           <ul>
-            <li><a href="https://petesmart.co.uk/" target="_blank" rel="noopener noreferrer" title="Peter Smart">Peter Smart</a></li>
-            <li><a href="http://www.davidlamothe.com/" target="_blank" rel="noopener noreferrer" title="David Lamothe">David Lamothe</a></li>
-            <li><a href="http://www.martinrettenbacher.com/" target="_blank" rel="noopener noreferrer" title="Martin Rettenbacher">Martin Rettenbacher</a></li>
+            <li><a href="https://petesmart.co.uk/" target="_blank" rel="noopener nofollow">Peter Smart</a></li>
+            <li><a href="http://www.davidlamothe.com/" target="_blank" rel="noopener nofollow">David Lamothe</a></li>
+            <li><a href="http://www.martinrettenbacher.com/" target="_blank" rel="noopener nofollow">Martin Rettenbacher</a></li>
           </ul>
         </div>
       </div>
