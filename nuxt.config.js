@@ -4,11 +4,49 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Pierre Le Vaillant',
+    title: 'Pierre Le Vaillant – Designer and Creative Front-end Engineer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+
+      // Title
+      { property: 'og:title', content: 'Pierre Le Vaillant – Designer and Creative Front-end Engineer' },
+      { name: 'twitter:title', content: 'Pierre Le Vaillant – Designer and Creative Front-end Engineer' },
+      { itemprop: 'name', content: 'Pierre Le Vaillant – Designer and Creative Front-end Engineer' },
+
+      // Description
+      { name: 'description', content: 'Pierre Le Vaillant is a graphic/product designer and a creative front-end engineer based in Paris, France. He is currently working at AREA 17.' },
+      { property: 'og:description', content: 'Pierre Le Vaillant is a graphic/product designer and a creative front-end engineer based in Paris, France. He is currently working at AREA 17.' },
+      { name: 'twitter:description', content: 'Pierre Le Vaillant is a graphic/product designer and a creative front-end engineer based in Paris, France. He is currently working at AREA 17.' },
+      { itemprop: 'description', content: 'Pierre Le Vaillant is a graphic/product designer and a creative front-end engineer based in Paris, France. He is currently working at AREA 17.' },
+
+      // URL
+      { name: 'og:url', content: 'https://www.pierrelevaillant.com/' },
+      { name: 'twitter:url', content: 'https://www.pierrelevaillant.com/' },
+
+      // Image
+      { property: 'og:image', content: 'https://www.pierrelevaillant.com/cover.png' },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
+      { name: 'twitter:image', content: 'https://www.pierrelevaillant.com/cover.png' },
+      { itemprop: 'image', content: 'https://www.pierrelevaillant.com/cover.png' },
+
+      // Copyright, author, robots...
+      { name: 'copyright', content: '(c) 2020 Pierre Le Vaillant' },
+      { rel: 'author', type: "text/plain", content: 'humans.txt' },
+      { name: 'robots', content: 'NOODP' },
+      { name: 'google', content: 'nositelinkssearchbox' },
+
+      // Facebook / Open Graph
+      { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'Pierre Le Vaillant' },
+      { property: 'og:author', content: 'https://www.facebook.com/Pierre.Le.Vaillant' },
+
+      // Twitter
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@levaillantp' },
+      { name: 'twitter:domain', content: 'pierrelevaillant.com' },
+      { name: 'twitter:creator', content: '@levaillantp' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -23,7 +61,7 @@ export default {
   */
   css: [
     '~/assets/scss/app.scss',
-    '~/node_modules/swiper/dist/css/swiper.css'
+    // '~/node_modules/swiper/dist/css/swiper.css'
   ],
   styleResources: {
     scss: [
@@ -35,15 +73,12 @@ export default {
   */
   plugins: [
     '~/plugins/global-components.js',
-    {
-      src: "~/plugins/lazysizes.js",
-      mode: "client"
-    },
+    // {
+    //   src: "~/plugins/lazysizes.js",
+    //   mode: "client"
+    // },
     {
       src: "~/plugins/locomotiveScroll.js",
-      mode: "client"
-    },
-    { src: '~/plugins/swiper.js',
       mode: "client"
     },
   ],
@@ -63,12 +98,6 @@ export default {
   modules: [
     '@nuxtjs/style-resources',
   ],
-  /*
-  ** Prismic configuration
-  */
-  prismic: {
-    endpoint: 'https://pierrelevaillant.cdn.prismic.io/api/v2'
-  },
   /*
   ** Preload font
   */
