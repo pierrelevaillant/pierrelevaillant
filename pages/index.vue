@@ -124,7 +124,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+/* purgecss start ignore */
 :hover,
 :active {
   outline: none;
@@ -199,4 +199,5 @@ li + li {
     letter-spacing: 0.01em;
   }
 }
+/* purgecss end ignore */
 </style>
