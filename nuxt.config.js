@@ -97,18 +97,25 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
+    ['nuxt-font-loader-strategy', {
+      ignoreLighthouse: true,
+      ignoredEffectiveTypes: ['2g', 'slow-2g'],
+      fonts: [
+        // Font
+        {
+          fileExtensions: ['woff2', 'woff'],
+          fontFamily: 'Monument Grotesk',
+          fontFaces: [
+            // Font-Face
+            {
+              preload: true,
+              src: '@/assets/fonts/monument-grotesk',
+            },
+          ]
+        }
+      ]
+    }]
   ],
-  /*
-  ** Preload font
-  */
-  bundleRenderer: {
-    shouldPreload: (file, type) => {
-      if (type === 'font') {
-        return /.woff2/.test(file)
-      }
-      return ['script', 'style'].includes(type)
-    }
-  },
   /*
   ** Build configuration
   */

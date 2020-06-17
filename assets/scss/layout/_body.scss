@@ -13,8 +13,8 @@ body {
   radial-gradient(
    at center, var(--color-gray), var(--color-gray-darker)
   );
-  font-family: $sans-serif-font;
-  font-size: $global-font-size;
+  font-family: sans-serif;
+  font-size: 100%;
   font-feature-settings: 'kern';
   font-kerning: normal;
   line-height: 1;
@@ -25,6 +25,10 @@ body {
   user-select: none;
 
   @include font-smoothing();
+}
+
+html.font_monument_grotesk body {
+  font-family: 'Monument Grotesk', sans-serif;
 }
 
 .has-scroll-smooth body {
