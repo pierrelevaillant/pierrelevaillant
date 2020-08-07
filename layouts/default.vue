@@ -25,7 +25,6 @@ export default {
       var dt = now - timestamp;
       var distance = Math.abs(currentmY - mY);
       var speed = Math.round(distance / dt * 1000);
-      console.log(dt, distance, speed);
 
       mY = currentmY;
       timestamp = now;
