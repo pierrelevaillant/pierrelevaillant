@@ -1,10 +1,4 @@
 <template>
-  <div>
+  <div class="h-32">
   </div>
 </template>
-
-<style scoped>
-div {
-  height: var(--spacing-medium);
-}
-</style>

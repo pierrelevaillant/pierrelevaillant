@@ -1,18 +1,18 @@
 export default {
-  mode: 'universal',
+  target: 'static',
   /*
   ** Headers of the page
   */
   head: {
-    title: 'Pierre Le Vaillant – Designer and Creative Front-end Engineer',
+    title: 'Pierre Le Vaillant – Designer & Interface Engineer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
 
       // Title
-      { property: 'og:title', content: 'Pierre Le Vaillant – Designer and Creative Front-end Engineer' },
-      { name: 'twitter:title', content: 'Pierre Le Vaillant – Designer and Creative Front-end Engineer' },
-      { itemprop: 'name', content: 'Pierre Le Vaillant – Designer and Creative Front-end Engineer' },
+      { property: 'og:title', content: 'Pierre Le Vaillant – Designer and Creative Interface Engineer' },
+      { name: 'twitter:title', content: 'Pierre Le Vaillant – Designer and Creative Interface Engineer' },
+      { itemprop: 'name', content: 'Pierre Le Vaillant – Designer and Creative Interface Engineer' },
 
       // Description
       { name: 'description', content: 'Pierre Le Vaillant is a graphic/product designer and a creative front-end engineer based in Paris, France. He is currently working at AREA 17.' },
@@ -59,24 +59,14 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-    '~/assets/scss/app.scss',
-    // '~/node_modules/swiper/dist/css/swiper.css'
-  ],
-  styleResources: {
-    scss: [
-      '~/assets/scss/app.scss',
-    ]
-  },
+  // css: [
+  //   '~/assets/scss/app.scss',
+  // ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
     '~/plugins/global-components.js',
-    // {
-    //   src: "~/plugins/lazysizes.js",
-    //   mode: "client"
-    // },
     {
       src: "~/plugins/locomotiveScroll.js",
       mode: "client"
@@ -86,17 +76,18 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxtjs/tailwindcss',
     ['@nuxtjs/google-analytics', {
       id: 'UA-58743682-1'
     }],
-    '~/modules/crawler',
-    '~/modules/static',
   ],
+  tailwindcss: {
+    exposeConfig: true
+  },
   /*
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/style-resources',
     ['nuxt-font-loader-strategy', {
       ignoreLighthouse: true,
       ignoredEffectiveTypes: ['2g', 'slow-2g'],
@@ -106,10 +97,19 @@ export default {
           fileExtensions: ['woff2', 'woff'],
           fontFamily: 'Monument Grotesk',
           fontFaces: [
-            // Font-Face
             {
               preload: true,
               src: '@/assets/fonts/monument-grotesk',
+            },
+          ]
+        },
+        {
+          fileExtensions: ['woff2'],
+          fontFamily: 'Self Modern',
+          fontFaces: [
+            {
+              preload: true,
+              src: '@/assets/fonts/self_modern',
             },
           ]
         }

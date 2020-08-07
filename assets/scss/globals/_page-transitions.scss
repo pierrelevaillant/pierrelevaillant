@@ -1,9 +1,0 @@
-.page-enter-active,
-.page-leave-active {
-  // transition: all 600ms var(--easing-translate);
-  transition: opacity .5s cubic-bezier(.455,.03,.515,.955);
-}
-.page-enter, .page-leave-active {
-  opacity: 0;
-  transform-origin: 50% 50%;
-}
