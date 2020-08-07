@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans antialiased uppercase text-black relative overflow-hidden" id="js-scroll" @mousemove="doDrag">
+  <div class="font-sans antialiased uppercase bg-white dark:bg-black text-black dark:text-white relative" id="js-scroll" @mousemove="doDrag">
     <main>
       <nuxt />
     </main>
@@ -37,7 +37,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.has-scroll-smooth {
+  overflow: hidden;
+}
+
 .indent-md {
   text-indent: 5vw;
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="m-4 grid grid-cols-2 gap-4 row-gap-32 text-xl sm:text-2xl lg:text-3xl leading-none">
+    <div class="m-4 grid grid-cols-2 gap-4 row-gap-20 lg:row-gap-32 text-lg sm:text-xl md:text-2xl xl:text-3xl leading-none" data-scroll>
       <div>Pierre</div>
       <div>Le Vaillant</div>
       <div class="col-span-2 text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
@@ -16,17 +16,17 @@
           <div class="js-fade" data-scroll>
             <ul>
               <li>
-                → &nbsp;<a href="https://www.area17.com/" target="_blank" rel="noopener nofollow" >AREA 17</a><br>
+                → &nbsp;<a class="font-serif" href="https://www.area17.com/" target="_blank" rel="noopener nofollow" >AREA 17</a><br>
                 Designer & Interface Engineer<br>
                 (2017 — Present)
               </li>
               <li class="mt-4">
-                → &nbsp;<a href="https://fantasy.co/" target="_blank" rel="noopener nofollow">Fantasy</a><br>
+                → &nbsp;<a class="font-serif" href="https://fantasy.co/" target="_blank" rel="noopener nofollow">Fantasy</a><br>
                 Product Design Intern<br>
                 (2016)
               </li>
               <li class="mt-4">
-                → &nbsp;<a href="https://www.nurun.com/" target="_blank" rel="noopener nofollow">Pubicis Nurun</a><br>
+                → &nbsp;<a class="font-serif" href="https://www.nurun.com/" target="_blank" rel="noopener nofollow">Pubicis Nurun</a><br>
                 Junior Art Director<br>
                 (2015)
               </li>
@@ -87,7 +87,7 @@
             </ul>
           </div>
       </div>
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 leading-none md:text-xl mx-4 mt-48 mb-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 leading-none text-sm md:text-xl mx-4 mt-48 mb-8" data-scroll>
       <div>
           <a href="mailto:hello@pierrelevaillant.com?Subject=Hello!">hello<br>@pierrelevaillant.com</a>
         </div>
@@ -113,7 +113,13 @@ export default {
   ],
   head () {
     return {
-      title: 'Pierre Le Vaillant – Designer and Creative Developer',
+      title: 'Pierre Le Vaillant – Designer and Interface Engineer',
+    }
+  },
+  methods: {
+    toggle() {
+      this.$colorMode.preference =
+        this.$colorMode.value == "light" ? "dark" : "light";
     }
   },
 }

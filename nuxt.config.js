@@ -77,6 +77,7 @@ export default {
   */
   buildModules: [
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
     ['@nuxtjs/google-analytics', {
       id: 'UA-58743682-1'
     }],
@@ -116,23 +117,7 @@ export default {
       ]
     }]
   ],
-  /*
-  ** Build configuration
-  */
-  build: {
-    postcss: {
-      plugins: {
-        "postcss-import": {},
-        "postcss-nested": {}
-      },
-      preset: {
-        stage: 0,
-        autoprefixer: {
-          cascade: false,
-          grid: false
-        }
-      }
-    },
-    extend(config, ctx) {}
+  purgeCSS: {
+    whitelist: ["dark-mode"]
   },
 }
