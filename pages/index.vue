@@ -85,6 +85,12 @@
             <li><a href="http://www.martinrettenbacher.com/" target="_blank" rel="noopener nofollow">Martin Rettenbacher</a></li>
           </ul>
         </div>
+        <div><a href="mailto:hello@pierrelevaillant.com?Subject=Hello!">hello<br>@pierrelevaillant.com</a></div>
+        <div>
+          <a class="block" href="https://www.instagram.com/pierre.levaillant/" target="_blank" rel="noopener nofollow">Instagram</a>
+          <a class="block" href="https://twitter.com/levaillantp" target="_blank" rel="noopener nofollow">Twitter</a>
+          <a class="block" href="https://www.linkedin.com/in/pierrelevaillant/" target="_blank" rel="noopener nofollow">LinkedIn</a>
+        </div>
     </div>
   </div>
 </template>
