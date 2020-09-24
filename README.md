@@ -1,6 +1,6 @@
-# 2020-wishes
+# Portfolio 20'
 
-> My peachy Nuxt.js project
+> Pierre Le Vaillant
 
 ## Build Setup
 
