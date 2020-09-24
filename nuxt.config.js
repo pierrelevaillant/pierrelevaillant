@@ -80,7 +80,7 @@ export default {
   */
   buildModules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
+
     ['@nuxtjs/google-analytics', {
       id: 'UA-58743682-1'
     }],
@@ -120,7 +120,4 @@ export default {
       ]
     }]
   ],
-  purgeCSS: {
-    whitelist: ["dark-mode"]
-  },
 }

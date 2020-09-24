@@ -19,7 +19,6 @@
     "nuxt": "^2.14.0",
     "nuxt-font-loader-strategy": "^1.1.1",
     "postcss-nested": "^4.2.1",
-    "tailwindcss-dark-mode": "^1.1.6",
     "tailwindcss-fluid": "^0.2.0"
   },
   "devDependencies": {
