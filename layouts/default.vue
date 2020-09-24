@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans antialiased uppercase bg-white dark:bg-black text-black dark:text-white relative" id="js-scroll" @mousemove="doDrag">
+  <div class="font-sans antialiased uppercase bg-white text-black relative" id="js-scroll" @mousemove="doDrag">
     <main>
       <nuxt />
     </main>
