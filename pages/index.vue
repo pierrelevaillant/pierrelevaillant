@@ -87,7 +87,7 @@
             </ul>
           </div>
       </div>
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 leading-none text-sm md:text-xl mx-4 mt-48 mb-8" data-scroll>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 leading-none text-sm md:text-xl mx-4 mt-48 mb-16" data-scroll>
       <div>
           <a href="mailto:hello@pierrelevaillant.com?Subject=Hello!">hello<br>@pierrelevaillant.com</a>
         </div>
@@ -114,12 +114,6 @@ export default {
   head () {
     return {
       title: 'Pierre Le Vaillant – Designer and Interface Engineer',
-    }
-  },
-  methods: {
-    toggle() {
-      this.$colorMode.preference =
-        this.$colorMode.value == "light" ? "dark" : "light";
     }
   },
 }
