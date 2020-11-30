@@ -3,101 +3,91 @@
       <div class="grid grid-cols-2 gap-4 row-gap-20 m-4 text-lg leading-none lg:row-gap-32 sm:text-xl md:text-2xl xl:text-3xl" data-scroll-section>
         <div>Pierre</div>
         <div>Le Vaillant</div>
-        <div class="col-span-2 text-3xl sm:text-4xl md:text-5xl xl:text-7xl">
+        <div class="col-span-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           <p>Product Designer and Interface Engineer based in Paris, currently working at (<a href="http://www.area17.com" target="_blank" rel="noopener nofollow">AREA 17</a>) and freelancing. Passionate about technology, visual communication and photography.</p>
           <p>Aim to deliver efficient graphic systems and interfaces for cultural, commercial and editorial clients.</p>
         </div>
-        <div class="js-fade" data-scroll>
-          <p>Experiences</p>
+
+        <p>Experiences</p>
+        <ul>
+          <li>
+            → &nbsp;<a href="https://www.area17.com/" target="_blank" rel="noopener nofollow" >AREA 17</a><br>
+            Designer & Interface Engineer<br>
+            (2017 — Present)
+          </li>
+          <li class="mt-4">
+            → &nbsp;<a href="https://fantasy.co/" target="_blank" rel="noopener nofollow">Fantasy</a><br>
+            Product Design Intern<br>
+            (2016)
+          </li>
+          <li class="mt-4">
+            → &nbsp;<a href="https://www.nurun.com/" target="_blank" rel="noopener nofollow">Pubicis Nurun</a><br>
+            Junior Art Director<br>
+            (2015)
+          </li>
+        </ul>
+
+        <p>Education</p>
+
+        <ul>
+          <li>→ ICTs Master Degree<br><a href="https://www.hetic.net/" target="_blank" rel="noopener nofollow">HETIC</a><br>(2017)</li>
+          <li class="mt-4">→ Computing Sciences DUT<br>Université du Maine<br>(2014)</li>
+        </ul>
+
+        <p>Disciplines</p>
+
+        <ul>
+          <li>Art direction</li>
+          <li>Photography</li>
+          <li>Interactive design</li>
+          <li>UX design</li>
+          <li>Design consulting</li>
+          <li>Design specifications</li>
+          <li>Brand books & guidelines</li>
+          <li>Editorial design</li>
+          <li>Design system</li>
+          <li>Mobile / App design</li>
+          <li>Front-end development</li>
+        </ul>
+
+        <p>Selected Clients</p>
+
+        <ul>
+          <li>Netflix</li>
+          <li>The Weather Channel</li>
+          <li>Mitsubishi</li>
+          <li>Nokia</li>
+          <li>Pentagram</li>
+          <li>Le Parisien</li>
+          <li>Salon des Entrepreneurs</li>
+          <li>Van Cleef & Arpels</li>
+          <li>Do The Green Thing</li>
+          <li>Celine</li>
+        </ul>
+
+        <p>Special thanks</p>
+
+        <ul>
+          <li><a href="https://petesmart.co.uk/" target="_blank" rel="noopener nofollow">Peter Smart</a></li>
+          <li><a href="http://www.davidlamothe.com/" target="_blank" rel="noopener nofollow">David Lamothe</a></li>
+          <li><a href="http://www.martinrettenbacher.com/" target="_blank" rel="noopener nofollow">Martin Rettenbacher</a></li>
+        </ul>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 pb-10 mx-4 mt-48 leading-none lg:grid-cols-4 md:text-xl" data-scroll-section>
+        <div>
+          <a href="mailto:hello@pierrelevaillant.com?Subject=Hello!">hello<br>@pierrelevaillant.com</a>
         </div>
-        <div class="js-fade" data-scroll>
-          <ul>
-            <li>
-              → &nbsp;<a href="https://www.area17.com/" target="_blank" rel="noopener nofollow" >AREA 17</a><br>
-              Designer & Interface Engineer<br>
-              (2017 — Present)
-            </li>
-            <li class="mt-4">
-              → &nbsp;<a href="https://fantasy.co/" target="_blank" rel="noopener nofollow">Fantasy</a><br>
-              Product Design Intern<br>
-              (2016)
-            </li>
-            <li class="mt-4">
-              → &nbsp;<a href="https://www.nurun.com/" target="_blank" rel="noopener nofollow">Pubicis Nurun</a><br>
-              Junior Art Director<br>
-              (2015)
-            </li>
-          </ul>
+        <div>
+          <a class="block" href="https://www.instagram.com/pierre.levaillant/" target="_blank" rel="noopener nofollow">Instagram</a>
+          <a class="block" href="https://twitter.com/levaillantp" target="_blank" rel="noopener nofollow">Twitter</a>
+          <a class="block" href="https://www.linkedin.com/in/pierrelevaillant/" target="_blank" rel="noopener nofollow">LinkedIn</a>
         </div>
-        <div class="caps js-fade" data-scroll>
-          <p>Education</p>
+        <div>75011<br/>PARIS</div>
+        <div>
+          <a href="/">www.<br/>pierrelevaillant.com</a>
         </div>
-        <div class="js-fade" data-scroll>
-          <ul>
-            <li>→ ICTs Master Degree<br><a href="https://www.hetic.net/" target="_blank" rel="noopener nofollow">HETIC</a><br>(2017)</li>
-            <li class="mt-4">→ Computing Sciences DUT<br>Université du Maine<br>(2014)</li>
-          </ul>
-        </div>
-        <div class="js-fade" data-scroll>
-          <p>Disciplines</p>
-        </div>
-        <div class="js-fade" data-scroll>
-          <ul>
-            <li>Art direction</li>
-            <li>Photography</li>
-            <li>Interactive design</li>
-            <li>UX design</li>
-            <li>Design consulting</li>
-            <li>Design specifications</li>
-            <li>Brand books & guidelines</li>
-            <li>Editorial design</li>
-            <li>Design system</li>
-            <li>Mobile / App design</li>
-            <li>Front-end development</li>
-          </ul>
-        </div>
-        <div class="js-fade" data-scroll>
-          <p>Selected Clients</p>
-        </div>
-        <div class="js-fade" data-scroll>
-          <ul>
-            <li>Netflix</li>
-            <li>The Weather Channel</li>
-            <li>Mitsubishi</li>
-            <li>Nokia</li>
-            <li>Pentagram</li>
-            <li>Le Parisien</li>
-            <li>Salon des Entrepreneurs</li>
-            <li>Van Cleef & Arpels</li>
-            <li>Do The Green Thing</li>
-            <li>Celine</li>
-          </ul>
-        </div>
-        <div class="js-fade" data-scroll>
-          <p>Special thanks</p>
-        </div>
-        <div class="js-fade" data-scroll>
-          <ul>
-            <li><a href="https://petesmart.co.uk/" target="_blank" rel="noopener nofollow">Peter Smart</a></li>
-            <li><a href="http://www.davidlamothe.com/" target="_blank" rel="noopener nofollow">David Lamothe</a></li>
-            <li><a href="http://www.martinrettenbacher.com/" target="_blank" rel="noopener nofollow">Martin Rettenbacher</a></li>
-          </ul>
-        </div>
-        </div>
-        <div class="grid grid-cols-2 gap-4 pb-10 mx-4 mt-48 leading-none lg:grid-cols-4 md:text-xl" data-scroll-section>
-          <div>
-            <a href="mailto:hello@pierrelevaillant.com?Subject=Hello!">hello<br>@pierrelevaillant.com</a>
-          </div>
-          <div>
-            <a class="block" href="https://www.instagram.com/pierre.levaillant/" target="_blank" rel="noopener nofollow">Instagram</a>
-            <a class="block" href="https://twitter.com/levaillantp" target="_blank" rel="noopener nofollow">Twitter</a>
-            <a class="block" href="https://www.linkedin.com/in/pierrelevaillant/" target="_blank" rel="noopener nofollow">LinkedIn</a>
-          </div>
-          <div>75011<br/>PARIS</div>
-          <div>
-            <a href="/">www.<br/>pierrelevaillant.com</a>
-          </div>
-        </div>
+      </div>
   </section>
 </template>
 
