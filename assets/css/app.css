@@ -1,0 +1,18 @@
+/*
+Project: 	 Pierre Le Vaillant
+Version: 	 1.0
+Author:    Pierre Le Vaillant
+Description:
+-------------------------------------------------------------------*/
+
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+/* purgecss end ignore */
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@import './setup/globals';
+
+@import './setup/smooth-scroll';

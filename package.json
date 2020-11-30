@@ -11,25 +11,25 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@area17/a17-tailwind-plugins": "^1.0.1",
     "@babel/polyfill": "^7.8.7",
     "@nuxt/http": "^0.3.8",
-    "core-js": "2",
+    "autoprefixer": "^10.0.4",
+    "core-js": "^3.8.0",
     "lazysizes": "^5.2.0",
-    "locomotive-scroll": "^3.2.7",
+    "locomotive-scroll": "^4.0.4",
     "nuxt": "^2.14.0",
     "nuxt-font-loader-strategy": "^1.1.1",
+    "postcss": "^8.1.10",
     "postcss-nested": "^4.2.1",
+    "tailwindcss": "^2.0.1",
     "tailwindcss-fluid": "^0.2.0"
   },
   "devDependencies": {
     "@babel/runtime-corejs2": "^7.9.2",
     "@babel/runtime-corejs3": "^7.9.2",
-    "@nuxtjs/color-mode": "^1.0.3",
     "@nuxtjs/google-analytics": "^2.2.2",
-    "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/tailwindcss": "^3.0.0",
-    "imagemin-mozjpeg": "^8.0.0",
-    "lqip-loader": "^2.2.0",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "tailwindcss-text-indent": "^1.0.2"

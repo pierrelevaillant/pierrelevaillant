@@ -62,14 +62,13 @@ export default {
   /*
   ** Global CSS
   */
-  // css: [
-  //   '~/assets/scss/app.scss',
-  // ],
+  css: [
+    '~/assets/css/app.css',
+  ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/global-components.js',
     {
       src: "~/plugins/locomotiveScroll.js",
       mode: "client"
@@ -80,14 +79,10 @@ export default {
   */
   buildModules: [
     '@nuxtjs/tailwindcss',
-
     ['@nuxtjs/google-analytics', {
       id: 'UA-58743682-1'
     }],
   ],
-  tailwindcss: {
-    exposeConfig: true
-  },
   /*
   ** Nuxt.js modules
   */

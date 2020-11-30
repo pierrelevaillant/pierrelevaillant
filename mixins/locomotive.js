@@ -9,8 +9,7 @@ export default {
       function() {
         this.lmS = new this.locomotiveScroll({
           el: document.querySelector("#js-scroll"),
-          smooth: true, /* if false disable overflow: hidden on html, body */
-          inertia: 0.98,
+          smooth: true
         });
       }.bind(this)
     );

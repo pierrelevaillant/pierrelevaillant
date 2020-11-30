@@ -1,0 +1,16 @@
+html,
+body {
+  @apply min-h-screen antialiased;
+}
+
+/* purgecss ignore */
+*:focus[data-focus-method='mouse'],
+*:focus[data-focus-method='touch'] {
+  outline: none;
+}
+
+/* purgecss ignore */
+*:focus[data-focus-method='key'] {
+  outline: 1px dotted black;
+  outline-offset: 1px;
+}
