@@ -8,7 +8,7 @@ export default {
     this.$nextTick(
       function() {
         this.lmS = new this.locomotiveScroll({
-          el: document.querySelector("#js-scroll"),
+          el: document.querySelector("#app"),
           smooth: true
         });
       }.bind(this)

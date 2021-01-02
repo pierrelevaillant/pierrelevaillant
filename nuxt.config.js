@@ -1,5 +1,6 @@
 export default {
   target: 'static',
+  components: true,
   /*
   ** Headers of the page
   */
@@ -99,16 +100,6 @@ export default {
             {
               preload: true,
               src: '@/assets/fonts/monument-grotesk',
-            },
-          ]
-        },
-        {
-          fileExtensions: ['woff2'],
-          fontFamily: 'Self Modern',
-          fontFaces: [
-            {
-              preload: true,
-              src: '@/assets/fonts/self_modern',
             },
           ]
         }

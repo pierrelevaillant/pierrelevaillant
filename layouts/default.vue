@@ -1,5 +1,6 @@
 <template>
-  <main id="js-scroll">
-    <nuxt />
+  <main id="app">
+    <Nuxt />
+    <Footer />
   </main>
 </template>

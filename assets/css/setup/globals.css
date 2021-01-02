@@ -3,6 +3,19 @@ body {
   @apply min-h-screen antialiased;
 }
 
+html {
+  @apply opacity-0 ease-out duration-1000;
+}
+
+html.font_monument_grotesk {
+  @apply opacity-100;
+}
+
+/* purgecss ignore */
+::selection {
+  @apply bg-black text-white;
+}
+
 /* purgecss ignore */
 *:focus[data-focus-method='mouse'],
 *:focus[data-focus-method='touch'] {
