@@ -42,12 +42,12 @@
 
         <ul>
           <li>Art direction</li>
-          <li>Photography</li>
           <li>User Interface design</li>
           <li>Brand books & guidelines</li>
           <li>Design system</li>
           <li>Mobile / App design</li>
           <li>Front-end development</li>
+          <li>Photography</li>
         </ul>
 
         <h3>Selected Clients</h3>
