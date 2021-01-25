@@ -21,7 +21,7 @@
           </li>
           <li>
             → &nbsp;<a href="https://fantasy.co/" target="_blank" rel="noopener nofollow">Fantasy</a><br>
-            Product Design Intern<br>
+            Product Designer Intern<br>
             (2016)
           </li>
           <li>
@@ -43,12 +43,8 @@
         <ul>
           <li>Art direction</li>
           <li>Photography</li>
-          <li>Interactive design</li>
-          <li>UX design</li>
-          <li>Design consulting</li>
-          <li>Design specifications</li>
+          <li>User Interface design</li>
           <li>Brand books & guidelines</li>
-          <li>Editorial design</li>
           <li>Design system</li>
           <li>Mobile / App design</li>
           <li>Front-end development</li>
