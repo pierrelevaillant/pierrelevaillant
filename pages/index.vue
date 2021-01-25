@@ -65,7 +65,7 @@
           <li>Celine</li>
         </ul>
 
-        <h3>Special thanks</h3>
+        <h3>Special Thanks</h3>
 
         <ul>
           <li>
