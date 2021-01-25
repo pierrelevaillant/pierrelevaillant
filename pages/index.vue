@@ -63,7 +63,7 @@
           <li>Nokia</li>
           <li>Pentagram</li>
           <li>Le Parisien</li>
-          <li>Salon des Entrepreneurs</li>
+          <li>Samsung Next</li>
           <li>Van Cleef & Arpels</li>
           <li>Do The Green Thing</li>
           <li>Celine</li>
