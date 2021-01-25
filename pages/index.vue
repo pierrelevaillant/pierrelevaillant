@@ -42,8 +42,8 @@
 
         <ul>
           <li>Art direction</li>
-          <li>User Interface design</li>
           <li>Brand books & guidelines</li>
+          <li>User Interface design</li>
           <li>Design system</li>
           <li>Mobile / App design</li>
           <li>Front-end development</li>
