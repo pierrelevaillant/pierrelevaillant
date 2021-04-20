@@ -1,5 +1,5 @@
 <template>
-  <footer class="grid grid-cols-2 pb-10 mx-4 mt-outer-1 lg:grid-cols-4 f-body">
+  <footer class="grid grid-cols-2 pb-10 mx-4 mt-outer-1 lg:grid-cols-4">
     <div>
       <a href="mailto:hello@pierrelevaillant.com?Subject=Hello!">hello<br>@pierrelevaillant.com</a>
     </div>

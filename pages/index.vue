@@ -1,5 +1,5 @@
 <template>
-  <section class="m-4 f-body">
+  <section class="m-4">
       <div class="grid grid-cols-2 gap-y-4 ">
         <h1 class="grid grid-cols-2 col-span-full">
           <span>Pierre</span>

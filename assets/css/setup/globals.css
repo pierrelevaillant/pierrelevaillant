@@ -1,6 +1,6 @@
 html,
 body {
-  @apply antialiased text-black;
+  @apply antialiased text-black bg-white;
 }
 
 html {

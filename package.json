@@ -16,9 +16,9 @@
     "@nuxt/http": "^0.3.8",
     "autoprefixer": "^10.0.4",
     "lazysizes": "^5.2.0",
-    "nuxt": "^2.14.0",
+    "nuxt": "latest",
     "nuxt-font-loader-strategy": "^1.1.1",
-    "postcss": "^8.2.10",
+    "postcss": "latest",
     "postcss-nested": "^4.2.1"
   },
   "devDependencies": {
