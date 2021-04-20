@@ -1,10 +1,10 @@
 html,
 body {
-  @apply min-h-screen antialiased;
+  @apply antialiased text-black;
 }
 
 html {
-  @apply opacity-0 ease-out duration-1000;
+  @apply duration-1000 ease-out opacity-0;
 }
 
 html.font_monument_grotesk {
@@ -13,7 +13,7 @@ html.font_monument_grotesk {
 
 /* purgecss ignore */
 ::selection {
-  @apply bg-black text-white;
+  @apply text-white bg-black;
 }
 
 /* purgecss ignore */

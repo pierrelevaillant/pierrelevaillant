@@ -66,15 +66,13 @@ export default {
   css: [
     '~/assets/css/app.css',
   ],
+  tailwindcss: {
+    jit: true
+  },
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    {
-      src: "~/plugins/locomotiveScroll.js",
-      mode: "client"
-    },
-  ],
+  plugins: [],
   /*
   ** Nuxt.js dev-modules
   */

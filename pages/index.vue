@@ -1,12 +1,12 @@
 <template>
-  <section class="m-4 text-lg leading-none sm:text-xl md:text-2xl xl:text-3xl" data-scroll-container>
-      <h1 class="grid grid-cols-2 gap-4" data-scroll-section>
-        <span>Pierre</span>
-        <span>Le Vaillant</span>
-      </h1>
+  <section class="m-4 f-body">
+      <div class="grid grid-cols-2 gap-y-4 ">
+        <h1 class="grid grid-cols-2 col-span-full">
+          <span>Pierre</span>
+          <span>Le Vaillant</span>
+        </h1>
 
-      <div class="grid grid-cols-2 gap-4 mt-4" data-scroll-section>
-        <h2 class="col-span-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+        <h2 class="col-span-full f-display">
           <p>Product Designer and Interface Engineer based in Paris, currently working at (<a href="http://www.area17.com" target="_blank" rel="noopener nofollow">AREA 17</a>) and freelancing. Passionate about technology, visual communication and photography.</p>
           <p>Aim to deliver efficient graphic systems and interfaces for cultural, commercial and editorial clients.</p>
         </h2>
@@ -83,12 +83,7 @@
 </template>
 
 <script>
-import locomotive from "~/mixins/locomotive.js";
-
 export default {
-  mixins: [
-    locomotive
-  ],
   head () {
     return {
       title: 'Pierre Le Vaillant – Designer and Interface Engineer',

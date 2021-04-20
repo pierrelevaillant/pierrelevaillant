@@ -14,5 +14,3 @@ Description:
 @import 'tailwindcss/utilities';
 
 @import './setup/globals';
-
-@import './setup/smooth-scroll';
