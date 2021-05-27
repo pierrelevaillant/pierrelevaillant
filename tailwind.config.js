@@ -54,7 +54,8 @@ module.exports = {
 
     colors: {
       white: '#f6f6f6',
-      black: '#202020'
+      black: '#202020',
+      transparent: 'transparent'
     },
 
     spacing: {

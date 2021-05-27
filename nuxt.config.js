@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Pierre Le Vaillant – Designer & Interface Engineer',
+    title: 'Pierre Le Vaillant – Digital generalist',
     htmlAttrs: {
       lang: 'en'
     },
@@ -14,9 +14,9 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
 
       // Title
-      { property: 'og:title', content: 'Pierre Le Vaillant – Designer and Creative Interface Engineer' },
-      { name: 'twitter:title', content: 'Pierre Le Vaillant – Designer and Creative Interface Engineer' },
-      { itemprop: 'name', content: 'Pierre Le Vaillant – Designer and Creative Interface Engineer' },
+      { property: 'og:title', content: 'Pierre Le Vaillant – Digital generalist' },
+      { name: 'twitter:title', content: 'Pierre Le Vaillant – Digital generalist' },
+      { itemprop: 'name', content: 'Pierre Le Vaillant – Digital generalist' },
 
       // Description
       { name: 'description', content: 'Pierre Le Vaillant is a graphic/product designer and a creative front-end engineer based in Paris, France. He is currently working at AREA 17.' },

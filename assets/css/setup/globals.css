@@ -27,3 +27,8 @@ html.font_monument_grotesk {
   outline: 1px dotted black;
   outline-offset: 1px;
 }
+
+.link-absolute::before {
+  @apply absolute inset-0;
+  content: '';
+}
