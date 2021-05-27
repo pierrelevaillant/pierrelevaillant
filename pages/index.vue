@@ -11,7 +11,7 @@
           <p>Aim to deliver efficient graphic systems and interfaces for cultural, commercial and editorial clients.</p>
         </h2>
 
-        <div class="relative grid col-span-full gap-y-4">
+        <div class="relative grid col-span-full gap-y-2 lg:gap-y-4">
           <h2 class="f-display">FEATURED</h2>
           <video class="w-full h-auto" loop muted autoplay :src="require('~/assets/celine.mp4')"></video>
           <div>
