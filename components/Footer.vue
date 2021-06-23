@@ -1,5 +1,5 @@
 <template>
-  <footer class="grid grid-cols-2 pb-10 mx-4 lg:grid-cols-3 mt-outer-1">
+  <footer class="grid grid-cols-2 pb-10 mx-4 lg:grid-cols-4 mt-outer-1">
     <div>
       <a href="mailto:hello@pierrelevaillant.com?Subject=Hello!">hello<br>@pierrelevaillant.com</a>
     </div>
@@ -9,9 +9,9 @@
       <a href="https://www.linkedin.com/in/pierrelevaillant/" target="_blank" rel="noopener nofollow">LinkedIn</a>
     </div>
     <div>75011<br/>Paris</div>
-    <!-- <div>
+    <div>
       <a href="/">www.<br/>pierrelevaillant.com</a>
-    </div> -->
+    </div>
   </footer>
 </template>
 

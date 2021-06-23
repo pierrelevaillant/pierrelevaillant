@@ -86,6 +86,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxt/http',
     ['nuxt-font-loader-strategy', {
       ignoreLighthouse: true,
       ignoredEffectiveTypes: ['2g', 'slow-2g'],
