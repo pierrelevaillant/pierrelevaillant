@@ -35,6 +35,8 @@ const spacings = {
 }
 
 module.exports = {
+  mode: "jit",
+
   purge: {
     content: [
       'components/**/*.vue',

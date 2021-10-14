@@ -1,4 +1,7 @@
-export default {
+import { defineNuxtConfig } from '@nuxt/bridge'
+
+export default defineNuxtConfig({
+  bridge: false,
   target: 'static',
   components: true,
   /*
@@ -105,4 +108,4 @@ export default {
       ]
     }]
   ],
-}
+})

@@ -7,7 +7,7 @@
         </h1>
 
         <h2 class="col-span-full f-display">
-          <p>Product Designer and Interface Engineer based in Paris, currently working at (<a href="http://www.area17.com" target="_blank" rel="noopener nofollow">AREA 17</a>) and freelancing. Passionate about technology, visual communication and photography.</p>
+          <p>Senior Designer and Interface Engineer based in Paris, currently working at (<a href="http://www.area17.com" target="_blank" rel="noopener nofollow">AREA 17</a>) and freelancing. Passionate about technology, visual communication and photography.</p>
           <p>Aim to deliver efficient graphic systems and interfaces for cultural, commercial and editorial clients.</p>
         </h2>
 
