@@ -1,22 +1,42 @@
-# Portfolio 20'
+# Nuxt 3 Minimal Starter
 
-> Pierre Le Vaillant
+Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
-## Build Setup
+## Setup
 
-``` bash
-# install dependencies
-$ yarn install
+Make sure to install the dependencies:
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+```bash
+# yarn
+yarn install
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+# npm
+npm install
 
-# generate static project
-$ yarn generate
+# pnpm
+pnpm install --shamefully-hoist
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Development Server
+
+Start the development server on http://localhost:3000
+
+```bash
+npm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.

@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+      @apply antialiased text-sm bg-white text-black;
+    }
+}
+
+::selection {
+    @apply bg-black text-white;
+}
+
+@font-face {
+    font-family: "Reckless";
+    font-display: swap;
+    src: local("Teodor Light"),
+    local("Teodor-Light"),
+        url('../fonts/RecklessNeue-Book.woff2') format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "NHaasGrotesk";
+    font-display: swap;
+    src: url('../fonts/Roobert.woff2') format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
+.page-enter-active,
+.page-leave-active {
+	transition: all 0.3s ease-out;
+}
+
+.page-enter-from,
+.page-leave-to {
+	opacity: 0;
+}
